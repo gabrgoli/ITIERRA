@@ -1,0 +1,25 @@
+.ButtonCreate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.8px solid var(--color3);
+    border-radius: 10px;
+    width: 160px;
+    height: 43px;
+    font: normal normal bold 14px/15px Poppins;
+    padding: 11.68px 18.27px 11.68px 16px;
+    background-color: #03D99D0D;
+    color: var(--color3);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.ButtonCreate svg{
+    color: var(--color3);
+}
+
+.link{
+    cursor: auto;
+    text-decoration: none;
+    pointer-events: none;
+}

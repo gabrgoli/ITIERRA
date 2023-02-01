@@ -1,0 +1,143 @@
+:root{
+    --formInputWidht: 100%;
+}
+
+
+.FormNewLead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 70px;
+    background: #fff;
+
+}
+
+.FormNewLead h1{
+    font: normal normal bold 28px/35px Outfit;
+    letter-spacing: 2.8px;
+    color: #5F4B8B;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.FormNewLead h2{
+    text-align: center;
+    font: normal normal bold 26px/32px Montserrat;
+    letter-spacing: 0px;
+    color: #222B45;
+}
+
+.FormNewLead button{
+    
+}
+
+.ButtonForm{
+    justify-content: center;
+    width: 304px;
+    height: 50px;
+    margin-top: 40px;
+    font: normal normal 600 19px/20px Outfit;
+}
+
+
+.Form-Tel-Email{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Form-Tel-Email > .form__group:first-child{
+  margin-right: 16px;
+}
+
+.form__group {
+    position: relative;
+    width: 100%;
+    margin-top:30px;
+    height: 66.8px;
+    
+  }
+
+  .form__group input{
+    box-sizing: border-box;
+    width: 100%;
+    font: normal normal 600 18px/23px Outfit;
+    color: #2F0240;
+    /* padding: 28px 10px; */
+    padding: 28px 10px 12px 20px;
+  }
+
+  .form__field {
+    box-sizing: border-box;
+    /* font-family: inherit; */
+    /* width: 100%; */
+    border: 2px solid #9b9b9b;
+    outline: 0;
+    /* font-size: 1.3rem; */
+ 
+    background: transparent;
+    transition: border-color 0.2s;
+    border-radius: 10px;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 30%;
+    left:20px;
+
+
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    display: block;
+    transition: 0.1s;
+    font-size: 1rem;
+    color: #2F0240;
+    margin-left: 20px;
+    font: normal normal normal 12px/15px Outfit;
+  }
+  
+  .form__label {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transition: 0.05s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    /* padding-bottom: 6px;
+    font-weight: 700; */
+    /* border-width: 2px; */
+    /* border-image: linear-gradient(to right, #A994D8, #A994D8); */
+    /* border-image-slice: 1; */
+    border: 2px solid #A994D8;
+    border-radius: 10px;
+    
+  }
+
+  /* la etiqueta cuando se escribe */
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    display: block;
+    transition: 0.1s;
+    font-size: 1rem;
+    color: #2F0240;
+    margin-left: 20px;
+    font: normal normal normal 12px/15px Outfit;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  

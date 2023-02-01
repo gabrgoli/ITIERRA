@@ -1,0 +1,52 @@
+.SearchBar{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.SearchBar > div{
+    position: relative;
+    display: flex;
+
+}
+
+.SearchBar > div > svg{
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    color: #b0bfbb;
+    width: 13px;
+    
+    
+}
+
+.SearchBar input{
+    border: 0px;
+    border-radius: 20px;
+    padding: 0px;
+    padding-left: 43px;
+    padding-right: 20px;
+    min-width: 300px;
+    height: 38px;
+    box-shadow: inset 0px 3px 5px #00000029;
+    /* font: normal normal medium 12px/9px Montserrat; */
+    font-family: Montserrat;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+
+}
+
+.SearchBar button{
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 4.5px;
+    border-radius: 50%;
+    background: rgb(13, 114, 82);
+    background: linear-gradient(0deg, #03A679  0%,  #03D99D 100%);
+    width: 29px;
+    height: 29px;
+    border: none;
+}
+
