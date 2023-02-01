@@ -1,11 +1,14 @@
 .HomePage{
     padding: 30px;
+    padding-top: 23px;
 }
+
 
 .home-userAndButton{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding-bottom: 21px;
 }
 .home-userAndButton > div {
     min-width: 110px;
@@ -34,6 +37,7 @@
     min-width: 200px;
     color: var(--color1);
     margin: 0;
+    
 }
 
 
@@ -44,6 +48,8 @@
     grid-template-columns: repeat(5,1fr);
     gap: 12px;
     height: 80vh;
+    border-top: 1.5px solid rgba(156, 162, 178, .5);
+    padding-top: 21px;
     /* flex:1; */
 }
 

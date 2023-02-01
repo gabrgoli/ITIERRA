@@ -3,7 +3,10 @@
     flex-direction: row;
     position: relative;
     justify-content: space-between;
-    padding: 20px;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid rgba(156, 162, 178, .5);
 }
 
 
@@ -13,10 +16,9 @@
 
 .NavBar-SearchBar{
     position: absolute;
-    top: 0;
+    bottom: 30%;
     left: 30%;
     right: 0;
-    bottom: 0;
 }
 
 .NavBar-Icons{
