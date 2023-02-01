@@ -87,7 +87,7 @@ function getErrors(input){
   
     //email Validation
     if (!input.email){errors.email = "El e-mail no puede estar vacío"}
-    else if(!(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/).test(input.email)){errors.email = "Email its not a valid email"}
+    else if(!(/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/).test(input.email)){errors.email = "El email no es un correo válido"}
     
     //nombre Validation
     if (!input.telefono){ errors.telefono = "El teléfono es requerido"} 
