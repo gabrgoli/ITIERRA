@@ -11,7 +11,7 @@ export const FormNewLead = () => {
 
     const dispatch=useDispatch()
         
-    const[input,setInput]=useState({})
+    let[input,setInput]=useState({})
     let [errors, setErrors] = useState({}) 
     const [loader,setLoader] = useState(false)
         
@@ -40,7 +40,7 @@ export const FormNewLead = () => {
         errors=getErrors(input)
         setErrors(getErrors(input))
         Object.entries(errors).length !== 0?
-            alert("hay errores",errors)
+            console.log('errores:',errors)
             :
             submit()
             
@@ -54,21 +54,28 @@ export const FormNewLead = () => {
             <h1>NUEVO LEAD</h1>
             <h2>Lorem ipsum dolor sit amet</h2>
 
-            <div1 className="form__group">
+            <section className="form__group">
                 <input type="input" className="form__field" onChange={(e) => handleChanchge(e)} placeholder="Nombre" name="nombre" id='nombre' value={input.nombre} required />
                 <label className="form__label">Nombre</label>
-            </div1>
-            <div1 className='Form-Tel-Email'>
-                <div2 className="form__group">
+            </section>
+            <div className='Form-Tel-Email'>
+                <section className="form__group">
                     <input type="input" className="form__field" onChange={(e) => handleChanchge(e)}  placeholder="Teléfono" name="telefono" id='telefono' value={input.telefono} required />
                     <label className="form__label">Teléfono</label>
-                </div2>
-                <div2 className="form__group">
+                </section>
+                <section className="form__group">
                     <input type="input" className="form__field" onChange={(e) => handleChanchge(e)} placeholder="Correo electrónico" name="email" id='email' value={input.email} required />
                     <label className="form__label">Correo electrónico</label>
-                </div2>
-            </div1>
+                </section>
+            </div>
             <button type="submit" name="crear" className="ButtonCreate ButtonForm" value="Button1">CREAR LEAD</button>
+            <section>
+            {
+                Object.values(errors).map((error,i) => {
+                    return <h4 key={i}>{error}</h4>
+                })
+            }
+            </section>
         </form>
     </div>
   )

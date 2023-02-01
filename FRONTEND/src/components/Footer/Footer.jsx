@@ -27,12 +27,12 @@ export const Footer = () => {
         </div>
         <div > 
           <h1>Contacto</h1>
-          <div1 className='Footer-Icons'>
+          <section className='Footer-Icons'>
             <ImFacebook2/>
             <ImTwitter/>
             <SiLinkedin/>
             <TbBrandTiktok/>
-          </div1>
+          </section>
           <h2>contacto@i-tierra.com</h2>
         </div>
       </div>
